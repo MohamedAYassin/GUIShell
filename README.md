@@ -1,4 +1,11 @@
+
 # DISCLAIMER
+
+
+
+![MIT License](https://img.shields.io/badge/License-MIT-green.svg)
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+
 **GUI Rat is intended solely for educational and research purposes. The author assumes no responsibility for any misuse or illegal/unauthorized application of this code. This project serves as a foundational reference for multiclient Remote Access Trojan (RAT) programming..** 
 
 
@@ -56,7 +63,10 @@ Right click the tray icon and click Change ip and port
 
 ## Screenshots
 
-![]()
+![shell](https://github.com/MohamedAYassin/GUIShell/blob/main/Screenshots/shell.jpg?raw=true)
+![config](https://github.com/MohamedAYassin/GUIShell/blob/main/Screenshots/config.png?raw=true)
+![menu](https://github.com/MohamedAYassin/GUIShell/blob/main/Screenshots/menu.png?raw=true)
+![screenshare](https://github.com/MohamedAYassin/GUIShell/blob/main/Screenshots/screenshare.jpg?raw=true)
 
 
 ## License
