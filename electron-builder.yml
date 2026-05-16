@@ -1,0 +1,31 @@
+appId: com.guishell.app
+productName: GUIShell
+directories:
+  output: dist
+  buildResources: assets
+files:
+  - electron/**/*
+  - src/**/*
+  - package.json
+win:
+  target:
+    - target: portable
+      arch:
+        - x64
+    - target: nsis
+      arch:
+        - x64
+  icon: assets/icon.ico
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: GUIShell
+  installerIcon: assets/icon.ico
+  uninstallerIcon: assets/icon.ico
+publish:
+  provider: github
+  owner: MohamedAYassin
+  repo: GUIShell
+  releaseType: release

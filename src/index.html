@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self' https://your-signaling-server.com wss://your-signaling-server.com; img-src 'self' blob:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; media-src 'self' blob:;">
+  <title>GUIShell</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <div id="app">
+    <div class="tabs">
+      <button class="tab active" data-tab="host">Host</button>
+      <button class="tab" data-tab="controller">Controller</button>
+    </div>
+
+    <div id="host-panel" class="panel active">
+      <div class="panel-content">
+        <h2>Share Your Screen</h2>
+        <div class="session-code" id="host-code">--------</div>
+        <div class="status" id="host-status">Ready</div>
+        <div class="button-row">
+          <button id="host-start" class="btn primary">Start</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="controller-panel" class="panel">
+      <div class="panel-content">
+        <h2>Remote Control</h2>
+        <input type="text" id="ctrl-code" class="code-input" maxlength="8" placeholder="Enter 8-digit code" autocomplete="off">
+        <div class="status" id="ctrl-status">Ready</div>
+        <div class="button-row">
+          <button id="ctrl-connect" class="btn primary">Connect</button>
+          <button id="ctrl-disconnect" class="btn danger" disabled>Disconnect</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="consent-overlay" class="overlay hidden">
+    <div class="consent-dialog">
+      <h2>Remote Access Request</h2>
+      <p>Someone is requesting access to your screen and input devices.</p>
+      <p class="warning">Only allow if you trust the person.</p>
+      <div class="button-row">
+        <button id="consent-allow" class="btn primary">Allow</button>
+        <button id="consent-deny" class="btn danger">Deny</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="viewer-overlay" class="overlay hidden">
+    <img id="viewer-img" tabindex="-1" />
+    <button id="viewer-exit" class="btn danger">Exit Remote View</button>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>

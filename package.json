@@ -1,0 +1,25 @@
+{
+  "name": "guishell",
+  "version": "1.0.0",
+  "description": "A modern boilerplate for building remote desktop and screen-sharing alternatives",
+  "main": "electron/main.js",
+  "author": "Mohamed Yassin",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "build:win": "electron-builder --win",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "dependencies": {
+    "@nut-tree-fork/nut-js": "^4.2.6",
+    "electron-updater": "^6.1.7"
+  },
+  "devDependencies": {
+    "electron": "^41.6.1",
+    "electron-builder": "^26.8.1"
+  },
+  "overrides": {
+    "file-type": "^21.3.1"
+  }
+}

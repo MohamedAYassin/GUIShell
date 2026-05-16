@@ -1,0 +1,57 @@
+# Node / Electron
+node_modules/
+out/
+
+# Python (legacy)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+*.egg
+
+# PyInstaller (legacy)
+*.manifest
+*.spec
+main.build/
+main.dist/
+main.onefile-build/
+
+# Build output
+build/
+dist/
+
+# Installer
+*.exe
+*.msi
+*.ico
+!assets/*.ico
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Server
+server/node_modules/
+server/signaling.db
+
+# Environment
+.env
+*.env
+
+# Package lock
+package-lock.json
+server/package-lock.json
+
+# Logs
+*.log
+
+# Screenshots
+Screenshots/
